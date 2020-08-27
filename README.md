@@ -1,3 +1,7 @@
+This is a theme for the /r/OfficeJS subreddit. See https://github.com/Senipah/Old-Reddit-Sass-Theme for the upstream.
+
+---
+
 # Modular Old Reddit Theme
 
 This is a [SASS](https://sass-lang.com/) theme for [Old Reddit ](old.reddit.com).
