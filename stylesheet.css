@@ -314,20 +314,12 @@ a {
 }
 
 #mail.havemail:before {
-<<<<<<< HEAD
-  animation-name: usjbygy;
-=======
-  animation-name: ux5ocos;
->>>>>>> upstream/master
+  animation-name: u9xxc8u;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-<<<<<<< HEAD
-@keyframes usjbygy {
-=======
-@keyframes ux5ocos {
->>>>>>> upstream/master
+@keyframes u9xxc8u {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1788,11 +1780,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-<<<<<<< HEAD
-  animation-name: usjbyhf;
-=======
-  animation-name: ux5ocp5;
->>>>>>> upstream/master
+  animation-name: u9xxc9j;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1802,11 +1790,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-<<<<<<< HEAD
-@keyframes usjbyhf {
-=======
-@keyframes ux5ocp5 {
->>>>>>> upstream/master
+@keyframes u9xxc9j {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -4726,10 +4710,7 @@ table tbody tr td label {
   display: none;
 }
 
-<<<<<<< HEAD
-=======
 #tb-page-overlay *,
->>>>>>> upstream/master
 #tb-context-menu * {
   color: #696969 !important;
 }
