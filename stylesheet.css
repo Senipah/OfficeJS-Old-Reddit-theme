@@ -1,8 +1,4 @@
-@charset "UTF-8";
 /**
- * Set up a decent box model on the root element
- */
-html {
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -4564,7 +4560,6 @@ table tbody tr td label {
 .entry .tagline {
   margin-top: 3px;
   color: #98abba ;
-  font: 12px Lato, Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   .entry .tagline {
@@ -4586,18 +4581,6 @@ table tbody tr td label {
 .link .entry .tagline time {
   cursor: help;
 }
-.link .entry .tagline a:hover {
-  color: #f50 ;
-  text-decoration: none;
-}
-@media (prefers-color-scheme: dark) {
-  .link .entry .tagline a:hover {
-    color: #f50 ;
-  }
-}
-.link .entry .tagline a.author {
-  margin-right: inherit;
-}
 
 .sidecontentbox .userattrs > a,
 .sidecontentbox .flair,
@@ -4616,15 +4599,6 @@ table tbody tr td label {
 .link .entry .tagline .userattrs > a:hover,
 .link .entry .tagline .flair:hover {
   text-decoration: none;
-  color: #fbe6e8 ;
-}
-@media (prefers-color-scheme: dark) {
-  .sidecontentbox .userattrs > a:hover,
-.sidecontentbox .flair:hover,
-.link .entry .tagline .userattrs > a:hover,
-.link .entry .tagline .flair:hover {
-    color: #17232d ;
-  }
 }
 .sidecontentbox .userattrs,
 .link .entry .tagline .userattrs {
@@ -4711,6 +4685,8 @@ table tbody tr td label {
   display: none !important;
 }
 
+.tb-popup *,
+.tb-jsapi-container *,
 .tb-page-overlay *,
 #tb-context-menu * {
   color: #696969 !important;
@@ -6497,12 +6473,20 @@ body.comments-page .side {
   margin-top: 118px;
 }
 
+#header .pagename {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+}
 #header .pagename a {
-  height: 42px;
-  width: 320px;
+  height: 65px;
+  width: 300px;
+  position: relative;
+  top: -15px;
+  left: calc(50% - 150px);
   background-image: url(%%title%%);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: auto 42px;
   text-indent: -9999px;
 }
 
