@@ -319,20 +319,12 @@ a {
 }
 
 #mail.havemail:before {
-<<<<<<< HEAD
-  animation-name: udeblb5;
-=======
-  animation-name: u9vtdod;
->>>>>>> upstream/master
+  animation-name: uvlt1uk;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-<<<<<<< HEAD
-@keyframes udeblb5 {
-=======
-@keyframes u9vtdod {
->>>>>>> upstream/master
+@keyframes uvlt1uk {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -1819,11 +1811,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-<<<<<<< HEAD
-  animation-name: udeblbk;
-=======
-  animation-name: u9vtdp3;
->>>>>>> upstream/master
+  animation-name: uvlt1uw;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1833,11 +1821,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-<<<<<<< HEAD
-@keyframes udeblbk {
-=======
-@keyframes u9vtdp3 {
->>>>>>> upstream/master
+@keyframes uvlt1uw {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -6597,7 +6581,7 @@ body.comments-page .side {
   height: 50px;
   width: 100%;
   background-color: #f50 ;
-  background-image: url("../images/title.png");
+  background-image: url("../images/title-sidebar.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
@@ -6609,7 +6593,54 @@ body.comments-page .side {
   }
 }
 
-<<<<<<< HEAD
+body:not(.subscriber) #header::after {
+  content: "You're not subscribed to r/vba yet! Subscribe now to get help with your vba code!";
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  height: 30px;
+  transition: all 0.2s ease;
+  text-align: center;
+  background-color: #ffdf84;
+  border-radius: 0;
+  color: #444444;
+  padding-left: 40px;
+  background-image: url("../images/info-shield.png");
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  top: 136px;
+  border: 1px solid #e0bc80;
+}
+body:not(.subscriber) span.fancy-toggle-button.subscribe-button.toggle {
+  position: absolute;
+  top: 136px;
+  left: 766px;
+  margin: 0;
+  padding-top: 4px;
+  z-index: 1;
+}
+body:not(.subscriber) span.fancy-toggle-button.subscribe-button.toggle a.add {
+  box-sizing: content-box;
+  margin: 0;
+  font-weight: normal;
+  width: 100px;
+  height: 20px;
+  border-radius: 0;
+  border: 1px solid #ababab;
+  background-color: #f0f0f0;
+  color: #444444;
+  text-align: center;
+  padding: 0;
+  line-height: 20px;
+}
+body:not(.subscriber) div.multi-selector.hover-bubble.anchor-right {
+  right: calc(100vw - 766px);
+  left: 561px;
+  margin-top: -40px;
+}
+
 .linkflair-unsolved .linkflairlabel {
   background: #f50;
   color: #ffffff ;
@@ -7106,8 +7137,6 @@ body.comments-page .side {
   }
 }
 
-=======
->>>>>>> upstream/master
 body:not(.subscriber) #header::after {
   content: "You're not subscribed to r/vba yet! Subscribe now to get help with your vba code!";
   position: absolute;
@@ -7122,11 +7151,7 @@ body:not(.subscriber) #header::after {
   border-radius: 0;
   color: #444444;
   padding-left: 40px;
-<<<<<<< HEAD
   background-image: url("../images/info-shield.png");
-=======
-  background-image: url(%%info-shield%%);
->>>>>>> upstream/master
   background-position: 10px center;
   background-repeat: no-repeat;
   top: 136px;
