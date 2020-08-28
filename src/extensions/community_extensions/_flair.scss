@@ -16,11 +16,12 @@
   @include v.customButtonColors(v.getColor("linkflair", "discussion"));
 }
 .linkflair-challenge .linkflairlabel {
-  background-color: v.getColor("linkflair", "challenge");
+  @include v.customButtonColors(v.getColor("linkflair", "challenge"));
 }
 
 .linkflair-protip .linkflairlabel {
   @include v.customButtonColors(v.getColor("linkflair", "protip"));
+  @include v.theme("color", v.$darkText);
 }
 
 .linkflair-codereview .linkflairlabel {
