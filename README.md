@@ -3,6 +3,11 @@ This is a theme for the /r/OfficeJS subreddit. See https://github.com/Senipah/Ol
 To fetch upstream changes:
 `git fetch upstream`
 
+To merge changes:
+`git merge upstream/master`
+
+**OR**
+
 To manually approve upstream changes:
 `git merge --no-commit --no-ff upstream/master`
 
