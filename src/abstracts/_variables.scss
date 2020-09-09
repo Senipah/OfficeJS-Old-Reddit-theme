@@ -3,7 +3,7 @@
 @use 'functions' as f;
 @forward 'functions';
 
-$_dev: true;
+$_dev: false;
 
 $base-font: Arial, Helvetica, sans-serif;
 $mono-font: Consolas, "Lucida Console", "DejaVu Sans Mono", monospace;
