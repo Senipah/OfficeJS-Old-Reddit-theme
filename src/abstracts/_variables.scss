@@ -3,7 +3,7 @@
 @use 'functions' as f;
 @forward 'functions';
 
-$_dev: false;
+$_dev: true;
 
 $base-font: Arial, Helvetica, sans-serif;
 $mono-font: Consolas, "Lucida Console", "DejaVu Sans Mono", monospace;
@@ -50,11 +50,7 @@ $_images: (
   "footer": "footer",
   "headerimg": "headerimg",
   "noresults": "noresults",
-<<<<<<< HEAD
   "sidebarimg": "sidebarimg",
-  "spritesheet": "spritesheet",
-=======
->>>>>>> upstream/master
   "title": "title",
   "title-sidebar": "title-sidebar",
   "info-shield": "info-shield",

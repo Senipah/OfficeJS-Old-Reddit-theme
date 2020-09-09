@@ -8,11 +8,7 @@ $_color: #444444;
 
 body:not(.subscriber) {
   #header::after {
-<<<<<<< HEAD
     content: "You're not subscribed to r/OfficeJs yet! Subscribe now to get help with your code!";
-=======
-    content: "You're not subscribed to this subreddit. Join now to become part of this community.";
->>>>>>> upstream/master
     position: absolute;
     width: 100%;
     display: flex;
