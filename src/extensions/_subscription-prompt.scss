@@ -8,12 +8,16 @@ $_color: #444444;
 
 body:not(.subscriber) {
   #header::after {
+<<<<<<< HEAD
     content: "You're not subscribed to r/OfficeJs yet! Subscribe now to get help with your code!";
+=======
+    content: "You're not subscribed to this subreddit. Join now to become part of this community.";
+>>>>>>> upstream/master
     position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
-    font-size: 17px;
+    font-size: 15px;
     height: 30px;
     transition: all 0.2s ease;
     text-align: center;
@@ -30,11 +34,12 @@ body:not(.subscriber) {
   span.fancy-toggle-button.subscribe-button.toggle {
     position: absolute;
     top: v.$header-height;
-    left: 766px;
+    left: 666px;
     margin: 0;
     padding-top: 4px;
     z-index: 1;
     a.add {
+      visibility: visible; //override _responsive-content.scss hiding
       box-sizing: content-box;
       margin: 0;
       font-weight: normal;
