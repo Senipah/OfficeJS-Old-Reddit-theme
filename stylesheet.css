@@ -77,6 +77,27 @@ a {
   border-radius: 0px;
 }
 
+.md .-headers,
+.md h1,
+.md h2,
+.md h3,
+.md h4,
+.md h5,
+.md h6 {
+  color: #292f34 ;
+}
+@media (prefers-color-scheme: dark) {
+  .md .-headers,
+.md h1,
+.md h2,
+.md h3,
+.md h4,
+.md h5,
+.md h6 {
+    color: #d7dadc ;
+  }
+}
+
 .footer-parent {
   position: relative;
   margin-top: 60px;
@@ -251,12 +272,12 @@ a {
 }
 
 #mail.havemail:before {
-  animation-name: umm4ecp;
+  animation-name: ujqhxw7;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes umm4ecp {
+@keyframes ujqhxw7 {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -548,18 +569,18 @@ a.random.choice {
 }
 
 #header-img.default-header {
+  margin-top: 15px;
   margin-left: 24px;
   z-index: 99;
   width: 42px;
-  height: 70px;
-  background-image: url(%%snoo%%);
-  background-position: center;
+  height: 40px;
+  background-image: url(%%snoo-sprite%%);
+  background-position: 0 0;
   vertical-align: top;
   font-size: 0;
 }
 #header-img.default-header:hover {
-  background-image: url(%%snoo-wink%%);
-  background-position: center;
+  background-position: -42px 0;
 }
 
 .account-activity-box a {
@@ -855,11 +876,11 @@ a.random.choice {
   position: relative;
   top: -3px;
 }
-.titlebox h1.redditname a {
+.titlebox h1 a {
   color: #292f34 ;
 }
 @media (prefers-color-scheme: dark) {
-  .titlebox h1.redditname a {
+  .titlebox h1 a {
     color: #d7dadc ;
   }
 }
@@ -1585,7 +1606,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-  animation-name: umm4edd;
+  animation-name: ujqhxwc;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1595,7 +1616,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-@keyframes umm4edd {
+@keyframes ujqhxwc {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -3175,11 +3196,13 @@ html .res-nightmode #sr-more-link {
 html.res-commentBoxes body > .content {
   padding-right: 16px !important;
 }
+html .res-filterline,
 html .subredditInfoToolTip {
   background-color: #ffffff ;
 }
 @media (prefers-color-scheme: dark) {
-  html .subredditInfoToolTip {
+  html .res-filterline,
+html .subredditInfoToolTip {
     background-color: #1a1a1b ;
   }
 }
