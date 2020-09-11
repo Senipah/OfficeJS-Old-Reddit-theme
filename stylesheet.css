@@ -266,18 +266,30 @@ a {
   border-radius: 0;
 }
 
-.commentarea .panestack-title,
-.commentarea .menuarea {
-  z-index: 0;
-}
-
 #mail.havemail:before {
-  animation-name: ujqhxw7;
+  position: fixed;
+  padding: 16px 24px;
+  bottom: 24px;
+  z-index: 100;
+  font-size: medium;
+  background: #ea4848;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
+  color: #d7dadc ;
+  width: 250px;
+  height: 48px;
+  left: 32px;
+  content: "You have new messages!";
+  text-indent: 0;
+  line-height: 1;
+  -webkit-transform: translateY(112px);
+  transform: translateY(112px);
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+  animation-name: uxbxovt;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes ujqhxw7 {
+@keyframes uxbxovt {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -308,7 +320,18 @@ a {
   }
 }
 #mail.havemail:hover:before {
+  background-color: #ec5b5b;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.48);
   animation-play-state: paused;
+}
+#mail.havemail:active:before {
+  background-color: #c73d3d;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.76);
+}
+
+.commentarea .panestack-title,
+.commentarea .menuarea {
+  z-index: 0;
 }
 
 #sr-header-area {
@@ -1606,7 +1629,7 @@ body:not(.subscriber) .content {
   content: " ";
   background: #ff4500 ;
   border-radius: 28px;
-  animation-name: ujqhxwc;
+  animation-name: uxbxow9;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
@@ -1616,7 +1639,7 @@ body:not(.subscriber) .content {
     background: #ff4500 ;
   }
 }
-@keyframes ujqhxwc {
+@keyframes uxbxow9 {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -3206,6 +3229,17 @@ html .subredditInfoToolTip {
     background-color: #1a1a1b ;
   }
 }
+html .res-filterline {
+  border-radius: 0px;
+}
+html .res-filterline-filter-hiding {
+  color: #738491 ;
+}
+@media (prefers-color-scheme: dark) {
+  html .res-filterline-filter-hiding {
+    color: #d2d2d2 ;
+  }
+}
 html .RESHover,
 html #srList {
   background-color: #ffffff ;
@@ -3509,11 +3543,11 @@ html #header-bottom-right #userbarToggle + * {
   margin-left: 0 !important;
 }
 html .res .srSep {
-  color: #c8c6cc ;
+  color: #292f34 ;
 }
 @media (prefers-color-scheme: dark) {
   html .res .srSep {
-    color: #343536 ;
+    color: #d7dadc ;
   }
 }
 html .res #RESShortcutsViewport {
@@ -4338,6 +4372,15 @@ table tbody tr td label {
   background: #ff4500;
 }
 
+.flair {
+  background: #f6f7f8 ;
+}
+@media (prefers-color-scheme: dark) {
+  .flair {
+    background: #272729 ;
+  }
+}
+
 .sidecontentbox .userattrs > a,
 .sidecontentbox .flair,
 .link .entry .tagline .userattrs > a,
@@ -4404,11 +4447,13 @@ html .mod-toolbox-rd #tb-feedback-window .tb-feedback-text {
     background-color: #1a1a1b ;
   }
 }
+html .action-reason,
 html .mod-toolbox-rd .menuarea.modtools {
   background-color: #d7dfe7 ;
 }
 @media (prefers-color-scheme: dark) {
-  html .mod-toolbox-rd .menuarea.modtools {
+  html .action-reason,
+html .mod-toolbox-rd .menuarea.modtools {
     background-color: #1e2931 ;
   }
 }
