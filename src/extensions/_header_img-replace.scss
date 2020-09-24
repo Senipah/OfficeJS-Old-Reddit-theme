@@ -23,7 +23,7 @@ $_img-margin-top: (v.$header-inner-height - $_hdr-img-height) / 2;
       width: $_hdr-img-width;
       position: relative;
       left: calc(50% - #{$_hdr-img-width / 2});
-      background-image: v.getImage("title-sidebar");
+      background-image: v.getImage("title");
       background-size: contain;
       background-repeat: no-repeat;
       text-indent: -9999px;
