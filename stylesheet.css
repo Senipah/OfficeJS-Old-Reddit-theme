@@ -87,13 +87,21 @@ a {
   position: relative;
   margin-top: 60px;
   height: 180px;
-  border-top: 50px solid #ffffff ;
-  background: url(%%footer%%) 50% 0/cover no-repeat;
+  border-top: 50px solid white ;
+  background-color: #ff5500 ;
+  background-image: url(%%footer%%);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 65px 200px 40px;
 }
 @media (prefers-color-scheme: dark) {
   .footer-parent {
     border-top: 50px solid #1a1a1b ;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .footer-parent {
+    background-color: #1a1a1b ;
   }
 }
 
@@ -162,7 +170,7 @@ a {
   overflow: hidden;
   min-width: 100%;
   max-height: 0;
-  background: #ffffff ;
+  background: white ;
   text-transform: capitalize;
   transition: 0.5s;
 }
@@ -207,7 +215,7 @@ a {
   }
 }
 .footer.rounded .col:hover {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border-color: #dadada ;
@@ -269,12 +277,12 @@ a {
   -webkit-transform: translateY(112px);
   transform: translateY(112px);
   transition: background 0.25s ease, box-shadow 0.25s ease;
-  animation-name: uhjrn0b;
+  animation-name: u5gmw4e;
   animation-duration: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
 }
-@keyframes uhjrn0b {
+@keyframes u5gmw4e {
   0% {
     transform: translateY(76px);
     opacity: 0;
@@ -319,8 +327,40 @@ a {
   z-index: 0;
 }
 
+#header-img.default-header {
+  margin-top: 11px;
+  margin-left: 24px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  background-image: url(%%roundel-wink-sprite%%);
+  background-position: 0 0;
+  vertical-align: top;
+  font-size: 0;
+  text-indent: unset;
+}
+#header-img.default-header::after {
+  position: relative;
+  width: 84px;
+  height: 27px;
+  left: 50px;
+  top: 11px;
+  content: "";
+  background-image: url(%%reddit-text-with-shadow%%);
+  display: inline-block;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+  transform-origin: left;
+}
+#header-img.default-header:hover {
+  background-position: -50px 0;
+}
+#header-img.default-header:hover::after {
+  transform: scaleX(1);
+}
+
 #sr-header-area {
-  background: #ffffff ;
+  background: white ;
   border: none;
   border-radius: 0px;
   transition: all 0.15s ease;
@@ -429,7 +469,7 @@ a.random.choice {
   text-decoration: none;
 }
 #sr-header-area .drop-choices {
-  background-color: #ffffff ;
+  background-color: white ;
 }
 @media (prefers-color-scheme: dark) {
   #sr-header-area .drop-choices {
@@ -469,7 +509,7 @@ a.random.choice {
   line-height: 40px;
   border: none;
   width: 100%;
-  background: #ffffff ;
+  background: white ;
   padding: 0 24px;
 }
 @media (prefers-color-scheme: dark) {
@@ -493,7 +533,7 @@ a.random.choice {
   }
 }
 #header .tabmenu li a:hover {
-  color: #f50 ;
+  color: #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   #header .tabmenu li a:hover {
@@ -539,7 +579,7 @@ a.random.choice {
 }
 #header .tabmenu li.selected a {
   font-weight: bold;
-  color: #f50 ;
+  color: #ff5500 ;
   background-color: #f6f7f8 ;
   border-radius: 9999px;
 }
@@ -573,7 +613,7 @@ a.random.choice {
 html .res-navTop #header-bottom-right,
 #header-bottom-right {
   z-index: 101;
-  background: #ffffff ;
+  background: white ;
   bottom: auto;
   border-radius: 0;
   border-bottom-left-radius: 4px;
@@ -591,8 +631,10 @@ html .res-navTop #header-bottom-right,
   height: 136px;
   border: none;
   border-radius: 0px;
-  background-color: #ffffff ;
-  background: url(%%headerimg%%) 50% 50%/cover no-repeat;
+  background-color: #ff5500 ;
+  background-image: url(%%headerimg%%);
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 1;
   box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
 }
@@ -623,28 +665,13 @@ html .res-navTop #header-bottom-right,
   }
 }
 
-#header-img.default-header {
-  margin-top: 16px;
-  margin-left: 24px;
-  z-index: 99;
-  width: 42px;
-  height: 40px;
-  background-image: url(%%snoo-sprite%%);
-  background-position: 0 0;
-  vertical-align: top;
-  font-size: 0;
-}
-#header-img.default-header:hover {
-  background-position: -42px 0;
-}
-
 .account-activity-box a {
   text-transform: uppercase;
 }
 
 .side .titlebox .tagline a.flairselectbtn,
 .leavemoderator a {
-  background: #ffffff ;
+  background: white ;
   color: #98abba ;
   padding: 2px 8px;
   position: absolute;
@@ -677,7 +704,7 @@ html .res-navTop #header-bottom-right,
 
 .login-form-side {
   border: none;
-  border-bottom: 1px solid #ccc ;
+  border-bottom: 1px solid #cccccc ;
   padding-bottom: 8px;
 }
 @media (prefers-color-scheme: dark) {
@@ -761,9 +788,9 @@ html .res-navTop #header-bottom-right,
 }
 .sidebox .morelink a {
   box-sizing: border-box;
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -795,7 +822,7 @@ html .res-navTop #header-bottom-right,
 .sidebox .morelink a:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .sidebox .morelink a:active {
@@ -809,7 +836,7 @@ html .res-navTop #header-bottom-right,
 }
 .sidebox .morelink a:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -993,7 +1020,7 @@ html .res-navTop #header-bottom-right,
 }
 .titlebox form.toggle,
 .titlebox .leavemoderator {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border-color: #dadada ;
@@ -1017,9 +1044,9 @@ html .res-navTop #header-bottom-right,
   }
 }
 .titlebox .res-fancy-toggle-button.RESDashboardToggle, .titlebox .res-fancy-toggle-button.RESshortcutside {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -1055,7 +1082,7 @@ html .res-navTop #header-bottom-right,
 .titlebox .res-fancy-toggle-button.RESDashboardToggle:active, .titlebox .res-fancy-toggle-button.RESshortcutside:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .titlebox .res-fancy-toggle-button.RESDashboardToggle:active, .titlebox .res-fancy-toggle-button.RESshortcutside:active {
@@ -1069,7 +1096,7 @@ html .res-navTop #header-bottom-right,
 }
 .titlebox .res-fancy-toggle-button.RESDashboardToggle:hover, .titlebox .res-fancy-toggle-button.RESshortcutside:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -1090,7 +1117,7 @@ html .res-navTop #header-bottom-right,
 .titlebox .res-fancy-toggle-button.RESDashboardToggle.remove, .titlebox .res-fancy-toggle-button.RESshortcutside.remove {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -1119,9 +1146,9 @@ html .res-navTop #header-bottom-right,
   }
 }
 .titlebox .res-fancy-toggle-button.RESDashboardToggle.remove:active, .titlebox .res-fancy-toggle-button.RESshortcutside.remove:active {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .titlebox .res-fancy-toggle-button.RESDashboardToggle.remove:active, .titlebox .res-fancy-toggle-button.RESshortcutside.remove:active {
@@ -1140,7 +1167,7 @@ html .res-navTop #header-bottom-right,
 }
 .titlebox .res-fancy-toggle-button.RESDashboardToggle.remove:hover, .titlebox .res-fancy-toggle-button.RESshortcutside.remove:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -1164,7 +1191,7 @@ html .res-navTop #header-bottom-right,
 .titlebox .fancy-toggle-button .active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -1189,9 +1216,9 @@ html .res-navTop #header-bottom-right,
   }
 }
 .titlebox .fancy-toggle-button .active:active {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .titlebox .fancy-toggle-button .active:active {
@@ -1210,7 +1237,7 @@ html .res-navTop #header-bottom-right,
 }
 .titlebox .fancy-toggle-button .active:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -1241,9 +1268,9 @@ html .res-navTop #header-bottom-right,
 }
 .titlebox .md h3 a,
 .titlebox .md h4 a {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -1280,7 +1307,7 @@ html .res-navTop #header-bottom-right,
 .titlebox .md h4 a:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .titlebox .md h3 a:active,
@@ -1297,7 +1324,7 @@ html .res-navTop #header-bottom-right,
 .titlebox .md h3 a:hover,
 .titlebox .md h4 a:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -1320,7 +1347,7 @@ html .res-navTop #header-bottom-right,
 }
 
 #search {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border-color: #dadada ;
@@ -1410,7 +1437,7 @@ body:not(.subscriber) .side {
   padding: 16px;
   width: 320px;
   height: 98px;
-  background: #ffffff ;
+  background: white ;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);
   border: none;
   color: #98abba ;
@@ -1485,7 +1512,7 @@ body:not(.subscriber) .side {
 }
 
 body div.content {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -1542,7 +1569,7 @@ body:not(.subscriber) .content {
 }
 
 .link.promotedlink.promoted {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -1577,7 +1604,7 @@ body:not(.subscriber) .content {
 }
 
 .organic-listing {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border-color: #dadada ;
@@ -1603,7 +1630,7 @@ body:not(.subscriber) .content {
 }
 .organic-listing .link {
   padding: 16px;
-  background: #ffffff ;
+  background: white ;
 }
 @media (prefers-color-scheme: dark) {
   .organic-listing .link {
@@ -1612,7 +1639,7 @@ body:not(.subscriber) .content {
 }
 .organic-listing .link.compressed, .organic-listing .link.promotedlink {
   padding: 16px;
-  background: #ffffff ;
+  background: white ;
 }
 @media (prefers-color-scheme: dark) {
   .organic-listing .link.compressed, .organic-listing .link.promotedlink {
@@ -1673,12 +1700,12 @@ body:not(.subscriber) .content {
   content: " ";
   background-color: #ff4500;
   border-radius: 28px;
-  animation-name: uhjrn1a;
+  animation-name: u5gmw4t;
   animation-duration: 0.35s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
-@keyframes uhjrn1a {
+@keyframes u5gmw4t {
   0% {
     transform: scale(0, 0);
     opacity: 1;
@@ -1714,7 +1741,7 @@ body:not(.subscriber) .content {
   left: 24px;
   top: -4px;
   background: #7193ff;
-  color: #ffffff ;
+  color: white ;
   border-radius: 4px;
   content: "Consider posting constructive criticism or an explanation when you downvote something.";
   transform: scaleX(0);
@@ -1747,7 +1774,7 @@ body:not(.subscriber) .content {
 }
 
 .author-tooltip {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -1799,7 +1826,7 @@ body:not(.subscriber) .content {
   }
 }
 .author-tooltip__head {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border-color: #dadada ;
@@ -1836,11 +1863,11 @@ body:not(.subscriber) .content {
   }
 }
 .author-tooltip__head a:hover {
-  color: #f50 ;
+  color: #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .author-tooltip__head a:hover {
-    color: #f50 ;
+    color: #ff5500 ;
   }
 }
 .author-tooltip__profile-name::after {
@@ -1892,9 +1919,9 @@ body .wiki-page .wiki-page-content .wiki_button,
 body .prev-button a,
 body .next-button a,
 body input[type=submit] {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   margin: 16px 16px 16px 0;
   font-size: 14px;
   text-align: center;
@@ -1947,7 +1974,7 @@ body .next-button a:active,
 body input[type=submit]:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   body .btn:active,
@@ -1979,7 +2006,7 @@ body .prev-button a:hover,
 body .next-button a:hover,
 body input[type=submit]:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -2057,7 +2084,7 @@ body input[type=submit]:active {
 .search-result-listing + .search-result-listing .contents,
 .link .usertext-body .md,
 [class] .searchfacets {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -2152,7 +2179,7 @@ body input[type=submit]:active {
 
 .usertext.border .usertext-body,
 .thing {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border-color: #dadada ;
@@ -2184,7 +2211,7 @@ body input[type=submit]:active {
 .backup-codes-modal .modal-content,
 .tfa-verify-email-modal .modal-content,
 .disable-tfa-modal .modal-content {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -2222,7 +2249,7 @@ body input[type=submit]:active {
 
 .crossposting-modal #cross_post .crosspost-description,
 .crossposting-modal #cross_post .crosspost-thing-preview {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -2261,7 +2288,7 @@ body input[type=submit]:active {
 }
 
 #autocomplete_dropdown {
-  background-color: #ffffff ;
+  background-color: white ;
 }
 @media (prefers-color-scheme: dark) {
   #autocomplete_dropdown {
@@ -2277,7 +2304,7 @@ body input[type=submit]:active {
 .usertext.border .md pre,
 .md code,
 .md pre {
-  background: #ffffff ;
+  background: white ;
   color: #616161 ;
   border: 2px solid #007acc ;
   font-family: Consolas, "Lucida Console", "DejaVu Sans Mono", monospace;
@@ -2425,12 +2452,12 @@ body input[type=submit]:active {
 }
 
 .link .entry .buttons li a:hover {
-  color: #f50 ;
+  color: #ff5500 ;
   text-decoration: none;
 }
 @media (prefers-color-scheme: dark) {
   .link .entry .buttons li a:hover {
-    color: #f50 ;
+    color: #ff5500 ;
   }
 }
 
@@ -2452,7 +2479,7 @@ body input[type=submit]:active {
   top: -1px;
   padding: 2px 3px;
   background: #f44336;
-  color: #ffffff ;
+  color: white ;
   cursor: help;
 }
 @media (prefers-color-scheme: dark) {
@@ -2607,22 +2634,22 @@ body input[type=submit]:active {
   }
 }
 .comment .flat-list li a:hover {
-  color: #f50 ;
+  color: #ff5500 ;
   text-decoration: none;
 }
 @media (prefers-color-scheme: dark) {
   .comment .flat-list li a:hover {
-    color: #f50 ;
+    color: #ff5500 ;
   }
 }
 .comment .flat-list li a[onclick*=reply] {
-  color: #f50 ;
+  color: #ff5500 ;
   font-weight: 700;
   font-size: 11px;
 }
 @media (prefers-color-scheme: dark) {
   .comment .flat-list li a[onclick*=reply] {
-    color: #f50 ;
+    color: #ff5500 ;
   }
 }
 
@@ -2648,7 +2675,7 @@ html .nestedlisting .comment .comment .comment,
 html .nestedlisting .comment .comment .comment .comment .comment,
 html .nestedlisting .comment .comment .comment .comment .comment .comment .comment,
 html .nestedlisting .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-  background-color: #ffffff !important;
+  background-color: white !important;
 }
 @media (prefers-color-scheme: dark) {
   html .nestedlisting .comment .comment .comment,
@@ -2689,7 +2716,7 @@ html .nestedlisting .comment .comment .comment .comment .comment .comment .comme
 }
 
 .commentarea .comment a.expand:hover {
-  background-color: #f50 ;
+  background-color: #ff5500 ;
 }
 
 .commentarea .thing,
@@ -3016,7 +3043,7 @@ body > .content .link.compressed .midcol {
 
 .hover-bubble {
   color: #292f34 ;
-  background: #ffffff ;
+  background: white ;
 }
 @media (prefers-color-scheme: dark) {
   .hover-bubble {
@@ -3030,7 +3057,7 @@ body > .content .link.compressed .midcol {
 }
 .hover-bubble.multi-selector strong {
   color: #292f34 ;
-  background: #ffffff ;
+  background: white ;
 }
 @media (prefers-color-scheme: dark) {
   .hover-bubble.multi-selector strong {
@@ -3044,7 +3071,7 @@ body > .content .link.compressed .midcol {
 }
 .hover-bubble.multi-selector .create-multi input[type=text] {
   color: #292f34 ;
-  background: #ffffff ;
+  background: white ;
 }
 @media (prefers-color-scheme: dark) {
   .hover-bubble.multi-selector .create-multi input[type=text] {
@@ -3064,7 +3091,7 @@ body > .content .link.compressed .midcol {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom: 1px solid #dadada ;
-  background-color: #f50 ;
+  background-color: #ff5500 ;
   color: #292f34 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -3085,7 +3112,7 @@ body > .content .link.compressed .midcol {
 .content .infobar.listingsignupbar,
 .content .infobar .listingsignupbar__title,
 .content .infobar a.listingsignupbar__container {
-  background: #ffffff !important;
+  background: white !important;
   color: #292f34 !important;
 }
 @media (prefers-color-scheme: dark) {
@@ -3105,7 +3132,7 @@ body > .content .link.compressed .midcol {
 
 .commentarea .infobar {
   border-color: #dadada ;
-  background-color: #ffffff ;
+  background-color: white ;
 }
 @media (prefers-color-scheme: dark) {
   .commentarea .infobar {
@@ -3144,7 +3171,7 @@ body > .content .link.compressed .midcol {
 }
 
 .infobar .md {
-  color: #ffffff ;
+  color: white ;
 }
 @media (prefers-color-scheme: dark) {
   .infobar .md {
@@ -3170,7 +3197,7 @@ body > .content .link.compressed .midcol {
 
 .reddit-infobar.with-icon {
   border: none;
-  background: #ffffff ;
+  background: white ;
   box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
   margin: 0 0 16px;
 }
@@ -3278,8 +3305,8 @@ body .crosspost-field:hover,
 body .text:hover,
 body textarea:hover,
 body input:hover {
-  background-color: #ffffff ;
-  border: 1px solid #f50 ;
+  background-color: white ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   body .crosspost-field:hover,
@@ -3321,11 +3348,11 @@ body input:hover {
 }
 
 body .content .sitetable .link .title a:hover {
-  color: #f50 ;
+  color: #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   body .content .sitetable .link .title a:hover {
-    color: #f50 ;
+    color: #ff5500 ;
   }
 }
 
@@ -3380,12 +3407,12 @@ body .content .sitetable .link .title a:hover {
   }
 }
 .link .domain a:hover {
-  color: #f50 ;
+  color: #ff5500 ;
   text-decoration: none;
 }
 @media (prefers-color-scheme: dark) {
   .link .domain a:hover {
-    color: #f50 ;
+    color: #ff5500 ;
   }
 }
 
@@ -3403,7 +3430,7 @@ body .content .sitetable .link .title a:hover {
   width: 320px;
   height: 128px;
   border: 1px solid #edf1f3 ;
-  background: #ffffff ;
+  background: white ;
 }
 @media (prefers-color-scheme: dark) {
   .read-next {
@@ -3418,7 +3445,7 @@ body .content .sitetable .link .title a:hover {
 .read-next .read-next-header {
   border-bottom: 1px solid #edf1f3 ;
   color: #98abba ;
-  background-color: #ffffff ;
+  background-color: white ;
   padding: 8px 16px;
 }
 @media (prefers-color-scheme: dark) {
@@ -3440,8 +3467,8 @@ body .content .sitetable .link .title a:hover {
   top: 8px;
 }
 .read-next .read-next-button {
-  background-color: #f50 ;
-  color: #ffffff ;
+  background-color: #ff5500 ;
+  color: white ;
   font: 10px/16px monospace;
   height: 16px;
   width: 16px;
@@ -3511,7 +3538,7 @@ body .content .thing.spam li[title~=removed] b {
 a.pretty-button[class] {
   background-image: none;
   border: none;
-  color: #ffffff ;
+  color: white ;
   line-height: 16px;
   transition: background-color 0.25s ease;
   border-radius: 4px;
@@ -3566,7 +3593,7 @@ a.pretty-button.neutral.pressed, a.pretty-button.negative.pressed {
 }
 
 ul.report-reasons {
-  background: #ffffff ;
+  background: white ;
   border: none;
   padding: 8px;
   font-size: 12px;
@@ -3595,7 +3622,7 @@ html #userTaggerVotesUp {
   box-sizing: content-box;
 }
 html .voteWeight {
-  background-color: #ffffff !important;
+  background-color: white !important;
   color: #98abba !important;
 }
 @media (prefers-color-scheme: dark) {
@@ -3609,7 +3636,7 @@ html .voteWeight {
   }
 }
 html div.res-search-options.res-search-pane.res-search-pane-open {
-  background-color: #ffffff !important;
+  background-color: white !important;
 }
 @media (prefers-color-scheme: dark) {
   html div.res-search-options.res-search-pane.res-search-pane-open {
@@ -3618,7 +3645,7 @@ html div.res-search-options.res-search-pane.res-search-pane-open {
 }
 html .RESMacroDropdown,
 html .res-show-link {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -3676,7 +3703,7 @@ html.res-commentBoxes body > .content {
 html .res-filterline,
 html .subredditInfoToolTip,
 html .commentarea .res-expando-box div.usertext-body .md {
-  background-color: #ffffff ;
+  background-color: white ;
 }
 @media (prefers-color-scheme: dark) {
   html .res-filterline,
@@ -3698,7 +3725,7 @@ html .res-filterline-filter-hiding {
 }
 html .RESHover,
 html #srList {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -3774,7 +3801,7 @@ html div.RES-keyNav-activeElement {
   }
 }
 html .RESDialogSmall {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border-color: #dadada ;
@@ -3795,8 +3822,8 @@ html .RESDialogSmall {
   }
 }
 html .RESDialogSmall > h3 {
-  color: #f50 ;
-  background-color: #ffffff ;
+  color: #ff5500 ;
+  background-color: white ;
   border-left: 3px solid #c8c6cc ;
   border-bottom: 1px solid #dadada ;
 }
@@ -3816,11 +3843,11 @@ html .RESDialogSmall > h3 {
   }
 }
 html .RESCloseButton:hover {
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   html .RESCloseButton:hover {
-    border: 1px solid #f50 ;
+    border: 1px solid #ff5500 ;
   }
 }
 html #userTaggerToolTip input[type=text],
@@ -3835,8 +3862,8 @@ html #userTaggerToolTip select {
 }
 html .toggleButton .toggleOn {
   border: 1px solid #4f8ef7;
-  background-color: #f50 ;
-  color: #ffffff ;
+  background-color: #ff5500 ;
+  color: white ;
 }
 @media (prefers-color-scheme: dark) {
   html .toggleButton .toggleOn {
@@ -3881,7 +3908,7 @@ html .res #RESSubredditGroupDropdown .RESShortcutsCurrentSub a {
   }
 }
 html .res #REScommentNavToggle {
-  background-color: #ffffff ;
+  background-color: white ;
 }
 @media (prefers-color-scheme: dark) {
   html .res #REScommentNavToggle {
@@ -3921,7 +3948,7 @@ html .res .RESDashboardToggle:hover {
 }
 html .res #progressIndicator {
   color: #d2d0d6 ;
-  background-color: #ffffff ;
+  background-color: white ;
 }
 @media (prefers-color-scheme: dark) {
   html .res #progressIndicator {
@@ -3942,7 +3969,7 @@ html .res #progressIndicator h2 {
   }
 }
 html .res .NERPageMarker {
-  background-color: #ffffff ;
+  background-color: white ;
 }
 @media (prefers-color-scheme: dark) {
   html .res .NERPageMarker {
@@ -4033,7 +4060,7 @@ html .pinHeader-header #header {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
 }
 html #RESMainGearOverlay {
-  background-color: #f50 ;
+  background-color: #ff5500 ;
   top: 0 !important;
   height: 26px !important;
   border-radius: 0 !important;
@@ -4044,7 +4071,7 @@ html #RESMainGearOverlay {
   }
 }
 html .RESDropdownList {
-  border-color: #f50 ;
+  border-color: #ff5500 ;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.24);
   margin-top: 4px;
   margin-right: 8px;
@@ -4055,9 +4082,9 @@ html .RESDropdownList {
   }
 }
 html .RESDropdownList li {
-  background-color: #f50 ;
-  color: #ffffff ;
-  border-color: #f50 ;
+  background-color: #ff5500 ;
+  color: white ;
+  border-color: #ff5500 ;
   transition: all 0.15s ease;
 }
 @media (prefers-color-scheme: dark) {
@@ -4079,7 +4106,7 @@ html .RESDropdownList li:first-letter {
   text-transform: capitalize;
 }
 html .RESDropdownList a {
-  color: #ffffff ;
+  color: white ;
 }
 @media (prefers-color-scheme: dark) {
   html .RESDropdownList a {
@@ -4087,7 +4114,7 @@ html .RESDropdownList a {
   }
 }
 html .RESDropdownList a:visited {
-  color: #ffffff ;
+  color: white ;
 }
 @media (prefers-color-scheme: dark) {
   html .RESDropdownList a:visited {
@@ -4096,8 +4123,8 @@ html .RESDropdownList a:visited {
 }
 html .RESDropdownList li:hover,
 html .RESDropdownList li a:hover {
-  color: #ffffff ;
-  background-color: #f50 ;
+  color: white ;
+  background-color: #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   html .RESDropdownList li:hover,
@@ -4108,13 +4135,13 @@ html .RESDropdownList li a:hover {
 @media (prefers-color-scheme: dark) {
   html .RESDropdownList li:hover,
 html .RESDropdownList li a:hover {
-    background-color: #f50 ;
+    background-color: #ff5500 ;
   }
 }
 html #RESSearchMenuItem {
   border: 1px solid #dadada ;
   border-radius: 1px;
-  background-color: #f50 ;
+  background-color: #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   html #RESSearchMenuItem {
@@ -4123,15 +4150,15 @@ html #RESSearchMenuItem {
 }
 @media (prefers-color-scheme: dark) {
   html #RESSearchMenuItem {
-    background-color: #f50 ;
+    background-color: #ff5500 ;
   }
 }
 html #RESSearchMenuItem:hover {
-  background-color: #f50 ;
+  background-color: #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   html #RESSearchMenuItem:hover {
-    background-color: #f50 ;
+    background-color: #ff5500 ;
   }
 }
 html .toggleButton .toggleOn,
@@ -4144,7 +4171,7 @@ html .moduleToggle.enabled .toggleOff,
 html .toggleButton.enabled .toggleOff {
   background-color: transparent;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
   transition: all 0.15s ease;
   border-radius: 4px;
 }
@@ -4160,9 +4187,9 @@ html .moduleToggle.enabled .toggleOn,
 html .toggleButton.enabled .toggleOn,
 html .moduleToggle:not(.enabled) .toggleOff,
 html .toggleButton:not(.enabled) .toggleOff {
-  color: #f50 ;
-  border: 1px solid #ffffff ;
-  background-color: #ffffff ;
+  color: #ff5500 ;
+  border: 1px solid white ;
+  background-color: white ;
   font-weight: bolder;
   transition: all 0.15s ease;
 }
@@ -4205,13 +4232,13 @@ html .guider {
   }
 }
 html .guider_content h1 {
-  color: #f50 ;
+  color: #ff5500 ;
 }
 html .guider_button {
   font-size: 11px;
   border: none;
   background-image: none;
-  background-color: #f50 ;
+  background-color: #ff5500 ;
   transition: all 0.15s ease;
 }
 @media (prefers-color-scheme: dark) {
@@ -4220,11 +4247,11 @@ html .guider_button {
   }
 }
 html .guider_button:hover {
-  background-color: #f50 ;
+  background-color: #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   html .guider_button:hover {
-    background-color: #f50 ;
+    background-color: #ff5500 ;
   }
 }
 html .x_button {
@@ -4289,18 +4316,18 @@ select:hover {
   border-color: #888;
 }
 select:focus {
-  border-color: #f50 ;
-  box-shadow: 0 0 1px 1px #f50 ;
+  border-color: #ff5500 ;
+  box-shadow: 0 0 1px 1px #ff5500 ;
   outline: none;
 }
 @media (prefers-color-scheme: dark) {
   select:focus {
-    border-color: #f50 ;
+    border-color: #ff5500 ;
   }
 }
 @media (prefers-color-scheme: dark) {
   select:focus {
-    box-shadow: 0 0 1px 1px #f50 ;
+    box-shadow: 0 0 1px 1px #ff5500 ;
   }
 }
 select option {
@@ -4315,11 +4342,11 @@ select:disabled, select[aria-disabled=true] {
   }
 }
 select:disabled:hover, select[aria-disabled=true]:hover {
-  border-color: #f50 ;
+  border-color: #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   select:disabled:hover, select[aria-disabled=true]:hover {
-    border-color: #f50 ;
+    border-color: #ff5500 ;
   }
 }
 
@@ -4356,11 +4383,11 @@ select:disabled:hover, select[aria-disabled=true]:hover {
   content: " ▼";
 }
 .dropdown.lightdrop .selected:hover {
-  color: #f50 ;
+  color: #ff5500 ;
 }
 
 .drop-choices.lightdrop {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -4521,40 +4548,6 @@ table tbody tr th label {
   background: #ff4500;
 }
 
-.flair {
-  color: #292f34 ;
-  background: #f6f7f8 ;
-}
-@media (prefers-color-scheme: dark) {
-  .flair {
-    color: #d7dadc ;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .flair {
-    background: #272729 ;
-  }
-}
-
-.sidecontentbox .userattrs > a,
-.sidecontentbox .flair,
-.link .entry .tagline .userattrs > a,
-.link .entry .tagline .flair {
-  height: auto;
-  border-radius: 4px;
-  margin: 0 5px;
-  padding: 2px 5px;
-  font-size: 10px;
-  color: #d7dadc ;
-  border: none;
-}
-.sidecontentbox .userattrs > a:hover,
-.sidecontentbox .flair:hover,
-.link .entry .tagline .userattrs > a:hover,
-.link .entry .tagline .flair:hover {
-  text-decoration: none;
-}
-
 .thumbnail > img {
   margin-left: 10px;
   width: 50px;
@@ -4577,6 +4570,18 @@ html #tb-footer-block {
 }
 .unvotable-message:first-letter {
   text-transform: capitalize;
+}
+
+.flair {
+  height: auto;
+  border-radius: 4px;
+  margin: 0 5px;
+  padding: 2px 5px;
+  font-size: 10px;
+  border: none;
+  font-weight: bold;
+  background: #ff5500 ;
+  color: #d7dadc ;
 }
 
 .entry {
@@ -4629,7 +4634,7 @@ html #tb-footer-block {
   margin: 0 0 16px;
   padding: 0 8px;
   line-height: 36px;
-  background: #ffffff ;
+  background: white ;
   border: none;
   color: #292f34 ;
   max-width: initial;
@@ -4735,12 +4740,12 @@ html #tb-footer-block {
   }
 }
 .comment .author:hover {
-  color: #f50 ;
+  color: #ff5500 ;
   text-decoration: none;
 }
 @media (prefers-color-scheme: dark) {
   .comment .author:hover {
-    color: #f50 ;
+    color: #ff5500 ;
   }
 }
 
@@ -4810,9 +4815,9 @@ body > .content .link .rank,
 .subreddit-rules-page .subreddit-rule-add-form-buttons button,
 .subreddit-rules-page .subreddit-rule-delete-confirmation button,
 .subreddit-rules-page .form-buttons button {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   margin: 16px 16px 16px 0;
   font-size: 14px;
   text-align: center;
@@ -4855,7 +4860,7 @@ body > .content .link .rank,
 .subreddit-rules-page .form-buttons button:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .subreddit-rules-page .subreddit-rule-buttons button:active,
@@ -4878,7 +4883,7 @@ body > .content .link .rank,
 .subreddit-rules-page .subreddit-rule-delete-confirmation button:hover,
 .subreddit-rules-page .form-buttons button:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -4972,9 +4977,9 @@ body > .content .link .rank,
   }
 }
 .search-page .search-result-listing .search-result-group .search-expando-button.collapsed .search-expando-button-label-collapsed {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -5008,7 +5013,7 @@ body > .content .link .rank,
 .search-page .search-result-listing .search-result-group .search-expando-button.collapsed .search-expando-button-label-collapsed:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .search-page .search-result-listing .search-result-group .search-expando-button.collapsed .search-expando-button-label-collapsed:active {
@@ -5022,7 +5027,7 @@ body > .content .link .rank,
 }
 .search-page .search-result-listing .search-result-group .search-expando-button.collapsed .search-expando-button-label-collapsed:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -5043,7 +5048,7 @@ body > .content .link .rank,
 .search-page .search-result-listing .search-result-group .search-expando-button.expanded .search-expando-button-label-expanded {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -5070,9 +5075,9 @@ body > .content .link .rank,
   }
 }
 .search-page .search-result-listing .search-result-group .search-expando-button.expanded .search-expando-button-label-expanded:active {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .search-page .search-result-listing .search-result-group .search-expando-button.expanded .search-expando-button-label-expanded:active {
@@ -5091,7 +5096,7 @@ body > .content .link .rank,
 }
 .search-page .search-result-listing .search-result-group .search-expando-button.expanded .search-expando-button-label-expanded:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -5115,9 +5120,9 @@ body > .content .link .rank,
   padding: 16px;
 }
 .search-page .search-result-listing .search-result-group .nav-buttons .nextprev a {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -5149,7 +5154,7 @@ body > .content .link .rank,
 .search-page .search-result-listing .search-result-group .nav-buttons .nextprev a:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .search-page .search-result-listing .search-result-group .nav-buttons .nextprev a:active {
@@ -5163,7 +5168,7 @@ body > .content .link .rank,
 }
 .search-page .search-result-listing .search-result-group .nav-buttons .nextprev a:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -5232,9 +5237,9 @@ body > .content .link .rank,
   }
 }
 .combined-search-page .search-result-subreddit .search-subscribe-button .active.add {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -5268,7 +5273,7 @@ body > .content .link .rank,
 .combined-search-page .search-result-subreddit .search-subscribe-button .active.add:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .combined-search-page .search-result-subreddit .search-subscribe-button .active.add:active {
@@ -5282,7 +5287,7 @@ body > .content .link .rank,
 }
 .combined-search-page .search-result-subreddit .search-subscribe-button .active.add:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -5303,7 +5308,7 @@ body > .content .link .rank,
 .combined-search-page .search-result-subreddit .search-subscribe-button .active.remove {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -5330,9 +5335,9 @@ body > .content .link .rank,
   }
 }
 .combined-search-page .search-result-subreddit .search-subscribe-button .active.remove:active {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .combined-search-page .search-result-subreddit .search-subscribe-button .active.remove:active {
@@ -5351,7 +5356,7 @@ body > .content .link .rank,
 }
 .combined-search-page .search-result-subreddit .search-subscribe-button .active.remove:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -5449,8 +5454,8 @@ body > .content .link .rank,
   }
 }
 .combined-search-page #search input[type=text]:hover {
-  background-color: #ffffff ;
-  border: 1px solid #f50 ;
+  background-color: white ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .combined-search-page #search input[type=text]:hover {
@@ -5464,7 +5469,7 @@ body > .content .link .rank,
 }
 
 .linefield {
-  background: #ffffff ;
+  background: white ;
   color: #98abba ;
   margin: 0 0 16px;
   width: 528px;
@@ -5481,7 +5486,7 @@ body > .content .link .rank,
   }
 }
 .linefield.mobile {
-  background: #ffffff ;
+  background: white ;
   color: #98abba ;
   margin: 0 0 16px;
   width: 528px;
@@ -5498,13 +5503,13 @@ body > .content .link .rank,
   }
 }
 .linefield .title {
-  color: #f50 ;
+  color: #ff5500 ;
   text-transform: capitalize;
   padding: 0;
 }
 @media (prefers-color-scheme: dark) {
   .linefield .title {
-    color: #f50 ;
+    color: #ff5500 ;
   }
 }
 .linefield .linefield-content {
@@ -5659,7 +5664,7 @@ pre {
 
 #images {
   padding: 8px 0;
-  background: #ffffff ;
+  background: white ;
   position: relative;
   overflow: auto;
   height: inherit;
@@ -5725,9 +5730,9 @@ ul.image-preview-list li .description pre {
 }
 
 .content.submit ul.tabmenu li:not(.selected) a {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   margin: 16px 16px 16px 0;
   font-size: 14px;
   text-align: center;
@@ -5756,7 +5761,7 @@ ul.image-preview-list li .description pre {
 .content.submit ul.tabmenu li:not(.selected) a:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .content.submit ul.tabmenu li:not(.selected) a:active {
@@ -5770,7 +5775,7 @@ ul.image-preview-list li .description pre {
 }
 .content.submit ul.tabmenu li:not(.selected) a:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -5794,7 +5799,7 @@ ul.image-preview-list li .description pre {
 .content.submit ul.tabmenu li.selected a {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
   margin: 16px 16px 16px 0;
   font-size: 14px;
   text-align: center;
@@ -5816,9 +5821,9 @@ ul.image-preview-list li .description pre {
   }
 }
 .content.submit ul.tabmenu li.selected a:active {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .content.submit ul.tabmenu li.selected a:active {
@@ -5837,7 +5842,7 @@ ul.image-preview-list li .description pre {
 }
 .content.submit ul.tabmenu li.selected a:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -5918,8 +5923,8 @@ ul.image-preview-list li .description pre {
   }
 }
 .content.submit .formtabs-content #newlink-with-image-upload .image-upload-drop-target:hover {
-  background-color: #ffffff ;
-  border: 1px solid #f50 ;
+  background-color: white ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .content.submit .formtabs-content #newlink-with-image-upload .image-upload-drop-target:hover {
@@ -5935,9 +5940,9 @@ ul.image-preview-list li .description pre {
   padding-right: 16px;
   font-size: 14px;
   line-height: 36px;
-  background-color: #f50 ;
+  background-color: #ff5500 ;
   color: #d7dadc ;
-  border-color: #f50 ;
+  border-color: #ff5500 ;
 }
 .content.submit .info-notice,
 .content.submit .infobar {
@@ -5971,11 +5976,11 @@ ul.image-preview-list li .description pre {
 
 .submit_text h1 span {
   text-transform: uppercase;
-  color: #f50 ;
+  color: #ff5500 ;
 }
 
 .wiki-page .wikititle {
-  background: #ffffff ;
+  background: white ;
   padding: 9px 16px 10px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);
   margin: 0;
@@ -5986,7 +5991,7 @@ ul.image-preview-list li .description pre {
   }
 }
 .wiki-page .pageactions {
-  background: #ffffff ;
+  background: white ;
   margin-left: 16px;
   padding: 0 16px;
   border: none;
@@ -6011,17 +6016,17 @@ ul.image-preview-list li .description pre {
 }
 .wiki-page .pageactions .wikiaction-current {
   padding: 10px 16px 9px;
-  border-bottom: 2px solid #f50 ;
-  color: #f50 ;
+  border-bottom: 2px solid #ff5500 ;
+  color: #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .wiki-page .pageactions .wikiaction-current {
-    border-bottom: 2px solid #f50 ;
+    border-bottom: 2px solid #ff5500 ;
   }
 }
 @media (prefers-color-scheme: dark) {
   .wiki-page .pageactions .wikiaction-current {
-    color: #f50 ;
+    color: #ff5500 ;
   }
 }
 .wiki-page .pageactions .wikiaction:hover,
@@ -6029,7 +6034,7 @@ ul.image-preview-list li .description pre {
   background: rgba(0, 0, 0, 0.05);
 }
 .wiki-page .wiki-page-content {
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border-color: #dadada ;
@@ -6119,11 +6124,11 @@ ul.image-preview-list li .description pre {
   width: 100%;
   left: 0;
   background: #7193ff;
-  color: #ffffff ;
+  color: white ;
   font-size: 1.1rem;
   display: inline-block;
   max-height: 35px;
-  animation-name: uhjrn1v;
+  animation-name: u5gmw59;
   animation-delay: 0s;
   animation-duration: 0.5s;
   animation-timing-function: ease;
@@ -6141,7 +6146,7 @@ ul.image-preview-list li .description pre {
     color: #d7dadc ;
   }
 }
-@keyframes uhjrn1v {
+@keyframes u5gmw59 {
   0% {
     width: 0;
   }
@@ -6157,17 +6162,16 @@ ul.image-preview-list li .description pre {
   padding: 0px;
 }
 
-.side .titlebox h1.redditname:before {
-  background-color: #f50 ;
-}
-@media (prefers-color-scheme: dark) {
-  .side .titlebox h1.redditname:before {
-    background-color: #f50 ;
-  }
-}
-
+.side .titlebox h1.redditname:before,
 .side .titlebox h1.redditname a {
   color: #d7dadc ;
+  background-color: #ff5500 ;
+}
+@media (prefers-color-scheme: dark) {
+  .side .titlebox h1.redditname:before,
+.side .titlebox h1.redditname a {
+    background-color: #1a1a1b ;
+  }
 }
 
 body #header {
@@ -6227,7 +6231,7 @@ body.wiki-page .side #search, body.comments-page .side #search, body.listing-pag
   left: 24px;
   top: 156px;
   height: 58px;
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -6352,12 +6356,13 @@ body.comments-page .side {
   visibility: visible;
   margin-top: 5px;
   height: 62px;
-  width: 300px;
+  width: 263px;
   position: relative;
-  left: calc(50% - 150px);
+  left: calc(50% - 131.5px);
   background-image: url(%%title%%);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   text-indent: -9999px;
 }
 
@@ -6365,11 +6370,10 @@ body.comments-page .side {
   display: block;
   height: 50px;
   width: 100%;
-  background-color: #f50 ;
   background-image: url(%%title-sidebar%%);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 100%;
+  background-size: contain;
   text-indent: -9999px;
 }
 
@@ -6545,9 +6549,9 @@ body:not(.subscriber) div.multi-selector.hover-bubble.anchor-right {
   list-style: none;
 }
 .side .titlebox .md ul:nth-of-type(1) > li > p {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -6581,7 +6585,7 @@ body:not(.subscriber) div.multi-selector.hover-bubble.anchor-right {
 .side .titlebox .md ul:nth-of-type(1) > li > p:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .side .titlebox .md ul:nth-of-type(1) > li > p:active {
@@ -6595,7 +6599,7 @@ body:not(.subscriber) div.multi-selector.hover-bubble.anchor-right {
 }
 .side .titlebox .md ul:nth-of-type(1) > li > p:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -6619,7 +6623,7 @@ body:not(.subscriber) div.multi-selector.hover-bubble.anchor-right {
 }
 .side .titlebox .md ul li blockquote {
   position: absolute;
-  background-color: #ffffff ;
+  background-color: white ;
   color: #292f34 ;
   border-radius: 4px;
   border: 1px solid;
@@ -6743,9 +6747,9 @@ body:not(.subscriber) div.multi-selector.hover-bubble.anchor-right {
   border: 1px solid #66c2ff;
 }
 .side .titlebox .md ul li blockquote p a {
-  background: #f50 ;
-  color: #ffffff ;
-  border: 1px solid #f50 ;
+  background: #ff5500 ;
+  color: white ;
+  border: 1px solid #ff5500 ;
   display: inline-block;
   margin: 0;
   text-decoration: none;
@@ -6779,7 +6783,7 @@ body:not(.subscriber) div.multi-selector.hover-bubble.anchor-right {
 .side .titlebox .md ul li blockquote p a:active {
   background: #331100 ;
   color: #d7dadc ;
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
 }
 @media (prefers-color-scheme: dark) {
   .side .titlebox .md ul li blockquote p a:active {
@@ -6793,7 +6797,7 @@ body:not(.subscriber) div.multi-selector.hover-bubble.anchor-right {
 }
 .side .titlebox .md ul li blockquote p a:hover {
   background: #ffaa80 ;
-  color: #ffffff ;
+  color: white ;
   border: 1px solid #ffaa80 ;
 }
 @media (prefers-color-scheme: dark) {
@@ -6822,7 +6826,7 @@ body:not(.subscriber) div.multi-selector.hover-bubble.anchor-right {
   border-bottom-right-radius: 0;
 }
 .side ol:nth-of-type(1) {
-  border: 1px solid #f50 ;
+  border: 1px solid #ff5500 ;
   border-top: none !important;
   margin-top: -10px;
   margin-bottom: 16px;
